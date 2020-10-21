@@ -8,7 +8,7 @@ class Form extends Component {
     name: '',
     city: ''
             },
-          userArray:  [],  
+          userArray:  []  
         }
             
        handleChange = (event , typeOfKey) => {
@@ -42,7 +42,7 @@ class Form extends Component {
         <input type = "text" onChange={(event) => this.handleChange(event, 'city')}/>
         <button onClick={this.submitValues}>Submit</button>
         <p>Name:{this.state.user.name} is from {this.state.user.city} </p>
-        <List userArray ={this.state.user}/>
+        <List userArray ={this.state.userArray}/>
 
          </>
          )
